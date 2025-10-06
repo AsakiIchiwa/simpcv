@@ -1,0 +1,173 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px;
+}
+
+
+
+.resume {
+  max-width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.header img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 25px;
+}
+.header-info h1 {
+  font-size: 2rem;
+  color: #0077cc;
+}
+.header-info h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #555;
+}
+.header-info p.intro {
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 10px;
+  color: #0077cc;
+  text-decoration: none;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 30px;
+}
+section h3 {
+  color: #0077cc;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: disc inside;
+  margin-left: 0;
+}
+.experience-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.experience-table th,
+.experience-table td {
+  text-align: left;
+  padding: 8px;
+}
+.experience-table th {
+  background: #0077cc;
+  color: #fff;
+}
+.experience-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.skills {
+  display: flex;           
+  justify-content: center;  
+  gap: 2rem;                
+  margin: 2rem auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;   
+  gap: 1.5rem;              
+}
+
+.skill-item {
+  background: #eef6fd;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 180px;
+}
+
+.stars {
+  color: #f5b301;
+  font-size: 1.1rem;
+}
+
+
+body {
+  margin-left: 70px;            
+  scroll-behavior: smooth;      
+}
+
+
+.slider {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 120px;
+  background: #222;
+  border-radius: 0 10px 10px 0;
+  transition: width 0.3s ease;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.slider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.slider li a:hover,
+.slider li a.active {
+  background: #0bb;
+}
+
+#toggleBtn {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: #0bb;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+#toggleBtn:hover {
+  background: #09a;
+}
